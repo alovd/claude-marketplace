@@ -4,18 +4,11 @@
     "name": "Alex Ovdiienko",
     "email": "alex.ovdienko@gmail.com"
   },
-  "metadata": {
-    "description": "Design, development, and workflow plugins for Claude Code",
-    "version": "1.0.0"
-  },
   "plugins": [
     {
       "name": "design-auditor",
-      "source": "./",
-      "description": "Audit any UI design against 17 professional rules. Scored reports covering typography, color, spacing, accessibility, animation, and more.",
-      "version": "1.2.2",
-      "strict": false,
-      "skills": ["./.claude/skills/design-auditor"]
+      "source": "./plugins/design-auditor",
+      "description": "Audit any UI design against 17 professional rules"
     }
   ]
 }
