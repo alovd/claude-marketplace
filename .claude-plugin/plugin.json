@@ -1,0 +1,9 @@
+{
+  "name": "design-auditor",
+  "description": "Audit any UI design against 17 professional rules. Scored reports covering typography, color, spacing, accessibility, animation, and more.",
+  "version": "1.2.1",
+  "author": {
+    "name": "Alex Ovdiienko"
+  },
+  "skills": ["./skills/design-auditor"]
+}
