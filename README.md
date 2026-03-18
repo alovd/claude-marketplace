@@ -24,6 +24,24 @@ After adding the marketplace, install any plugin:
 
 Plugins update automatically when new versions are pushed.
 
-## Adding new plugins
+## Repo structure
 
-New plugins are added to this marketplace over time. Run `/plugin marketplace update` to see the latest available plugins.
+```
+claude-marketplace/
+├── .claude-plugin/
+│   └── marketplace.json       ← registry (team subscribes to this)
+└── plugins/
+    ├── design-auditor/        ← each plugin is a folder
+    │   ├── .claude-plugin/
+    │   │   └── plugin.json
+    │   └── .claude/
+    │       └── skills/...
+    ├── next-plugin/           ← just add a folder + marketplace entry
+    └── ...
+```
+
+## Adding a new plugin
+
+1. Create `plugins/<name>/` with `.claude-plugin/plugin.json` and skill/agent/MCP files
+2. Add an entry to `.claude-plugin/marketplace.json`
+3. Push — team gets it on next update

@@ -1,0 +1,22 @@
+{
+  "name": "design-auditor",
+  "description": "Audit any UI design against 17 professional rules covering typography, color contrast, spacing, accessibility, animation, navigation, and more. Works with Figma MCP, code (HTML/CSS/React/Vue), screenshots, or written descriptions. Gives clear, actionable, beginner-friendly feedback with a scored report.",
+  "version": "1.2.1",
+  "author": {
+    "name": "Alex Ovdiienko"
+  },
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "audit",
+    "accessibility",
+    "wcag",
+    "typography",
+    "color-contrast",
+    "spacing",
+    "ui-review",
+    "figma",
+    "design-qa"
+  ],
+  "skills": ["./.claude/skills/design-auditor"]
+}

@@ -11,10 +11,7 @@
   "plugins": [
     {
       "name": "design-auditor",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/alovd/design-auditor-plugin.git"
-      },
+      "source": "./plugins/design-auditor",
       "description": "Audit any UI design against 17 professional rules. Scored reports covering typography, color, spacing, accessibility, animation, and more.",
       "version": "1.2.1",
       "strict": true
