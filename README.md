@@ -6,6 +6,7 @@ Skills, agents, and MCP tools for the team.
 
 ```bash
 /plugin marketplace add alovd/claude-marketplace
+/plugin install design-auditor@alovd-marketplace
 ```
 
 ## Available Plugins
@@ -14,34 +15,22 @@ Skills, agents, and MCP tools for the team.
 | ------------------ | ---------------------------------------------- | -------------------------------------------------- |
 | **design-auditor** | Audit UI designs against 17 professional rules | `/plugin install design-auditor@alovd-marketplace` |
 
-## Usage
-
-After adding the marketplace, install any plugin:
-
-```bash
-/plugin install design-auditor@alovd-marketplace
-```
-
-Plugins update automatically when new versions are pushed.
-
 ## Repo structure
 
 ```
 claude-marketplace/
 ├── .claude-plugin/
-│   └── marketplace.json       ← registry (team subscribes to this)
-└── plugins/
-    ├── design-auditor/        ← each plugin is a folder
-    │   ├── .claude-plugin/
-    │   │   └── plugin.json
-    │   └── .claude/
-    │       └── skills/...
-    ├── next-plugin/           ← just add a folder + marketplace entry
+│   └── marketplace.json       ← registry + plugin definitions
+└── skills/
+    ├── design-auditor/        ← each skill is a folder with SKILL.md
+    │   ├── SKILL.md
+    │   └── references/
+    ├── next-skill/            ← just add a folder + marketplace entry
     └── ...
 ```
 
-## Adding a new plugin
+## Adding a new skill
 
-1. Create `plugins/<name>/` with `.claude-plugin/plugin.json` and skill/agent/MCP files
-2. Add an entry to `.claude-plugin/marketplace.json`
+1. Create `skills/<name>/SKILL.md`
+2. Add `"./skills/<name>"` to the plugin's `skills` array in `marketplace.json`
 3. Push — team gets it on next update

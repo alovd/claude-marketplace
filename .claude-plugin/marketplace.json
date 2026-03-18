@@ -11,10 +11,11 @@
   "plugins": [
     {
       "name": "design-auditor",
-      "source": "./plugins/design-auditor",
+      "source": "./",
       "description": "Audit any UI design against 17 professional rules. Scored reports covering typography, color, spacing, accessibility, animation, and more.",
       "version": "1.2.1",
-      "strict": true
+      "strict": true,
+      "skills": ["./skills/design-auditor"]
     }
   ]
 }
