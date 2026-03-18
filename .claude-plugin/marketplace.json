@@ -1,0 +1,23 @@
+{
+  "name": "alovd-marketplace",
+  "owner": {
+    "name": "Alex Ovdiienko",
+    "email": "alex.ovdienko@gmail.com"
+  },
+  "metadata": {
+    "description": "Design, development, and workflow plugins for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "design-auditor",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/alovd/design-auditor-plugin.git"
+      },
+      "description": "Audit any UI design against 17 professional rules. Scored reports covering typography, color, spacing, accessibility, animation, and more.",
+      "version": "1.2.1",
+      "strict": true
+    }
+  ]
+}
