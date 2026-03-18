@@ -5,5 +5,5 @@
   "author": {
     "name": "Alex Ovdiienko"
   },
-  "skills": ["./skills/design-auditor"]
+  "skills": ["./.claude/skills/design-auditor"]
 }
