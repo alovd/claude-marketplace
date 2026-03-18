@@ -18,5 +18,5 @@
     "figma",
     "design-qa"
   ],
-  "skills": ["./.claude/skills/design-auditor"]
+  "skills": ["./skills/design-auditor"]
 }
